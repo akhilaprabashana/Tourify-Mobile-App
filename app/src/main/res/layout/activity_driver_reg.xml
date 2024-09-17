@@ -1,0 +1,273 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vty"
+    tools:layout_editor_absoluteX="24dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+
+
+    <ImageView
+        android:id="@+id/DriveLoginImg"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drivermain"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Drivertxt1"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="308dp"
+        android:layout_height="36dp"
+
+        android:layout_marginStart="8dp"
+        android:text="Drivers and vegicle Registraion"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/DriveLoginImg"
+        app:layout_constraintTop_toTopOf="@+id/DriveLoginImg" />
+
+    <ImageView
+        android:id="@+id/dirvermain1"
+        android:layout_width="226dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drivers"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="494dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dirvermain1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="392dp"
+                android:layout_height="916dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/driver_register"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="-28dp" />
+
+            <TextView
+                android:id="@+id/driverloginTopic"
+                android:layout_width="207dp"
+                android:layout_height="32dp"
+
+                android:layout_marginTop="16dp"
+                android:text="Personal Details"
+                android:textColor="#340683"
+                android:textColorLink="#9C27B0"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/driverName"
+                android:layout_width="315dp"
+                android:layout_height="48dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverloginTopic" />
+
+            <EditText
+                android:id="@+id/driverBirth"
+                android:layout_width="313dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Date Of Birth"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverName" />
+
+            <EditText
+                android:id="@+id/driverGender"
+                android:layout_width="313dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Gender"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverRegaddress" />
+
+            <EditText
+                android:id="@+id/driverEmail"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Email"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverGender" />
+
+            <EditText
+                android:id="@+id/driverpwd"
+                android:layout_width="313dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverEmail" />
+
+            <Button
+                android:id="@+id/driverbtn"
+                android:layout_width="149dp"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="76dp"
+
+                android:backgroundTint="#020A35"
+                android:text="submit"
+                android:textColor="#00BCD4"
+                app:cornerRadius="20dp"
+                app:iconTint="#170885"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.553"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dvehicleinsuarnce" />
+
+            <EditText
+                android:id="@+id/driverRegaddress"
+                android:layout_width="313dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Address"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverBirth" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="207dp"
+                android:layout_height="32dp"
+
+                android:layout_marginTop="52dp"
+                android:text="Vehicle Details"
+                android:textColor="#340683"
+                android:textColorLink="#9C27B0"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.57"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/driverpwd" />
+
+            <EditText
+                android:id="@+id/dvehiclenumber"
+                android:layout_width="315dp"
+                android:layout_height="48dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Vehicle Number"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.684"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <EditText
+                android:id="@+id/dvehicletype"
+                android:layout_width="315dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Vehicle Type"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.684"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dvehiclenumber" />
+
+            <EditText
+                android:id="@+id/dvehicleinsuarnce"
+                android:layout_width="315dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/details_driver"
+                android:ems="10"
+                android:hint=" Insuarance Expire Date"
+                android:inputType="textPersonName"
+                android:textColorHint="#01030E"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.684"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dvehicletype" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NormalApp"
+        tools:targetApi="31">
+
+<<<<<<< Updated upstream
+        <activity
+            android:name=".CBookDriver"
+            android:exported="false" />
+        <activity
+            android:name=".CAssignDriver"
+            android:exported="false" />
+        <activity
+            android:name=".CEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CRegister"
+            android:exported="false" />
+        <activity
+            android:name=".CMainActivity"
+            android:exported="false"/>
+=======
+>>>>>>> Stashed changes
+        <activity
+            android:name=".CustomerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AddPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".DriverPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverRegActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlacesHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".guideEditSheet"
+            android:exported="false" />
+        <activity
+            android:name=".GuideRegister1"
+            android:exported="false" />
+        <activity
+            android:name=".GuideServices"
+            android:exported="false" />
+        <activity
+            android:name=".GuidePayment"
+            android:exported="false" />
+        <activity
+            android:name=".GuideProfile"
+            android:exported="false" />
+        <activity
+            android:name=".guideAddPackages"
+            android:exported="false" />
+        <activity
+            android:name=".GuideLogin"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Updateprduct"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.viewproduct"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Allproducts"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.addproduct"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity_h"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
